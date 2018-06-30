@@ -1,0 +1,73 @@
+﻿@model List<PersonOfTheYear.Models.Person>
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Honor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Birth_Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].DeathYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Context)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Honor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birth_Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeathYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Context)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

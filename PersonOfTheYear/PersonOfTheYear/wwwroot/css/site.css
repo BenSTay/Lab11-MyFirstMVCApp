@@ -1,0 +1,60 @@
+﻿* {
+    text-align: center;
+}
+
+div {
+    border: 10px solid red;
+    position: relative;
+    height: 80vw;
+    width: 80vw;
+    max-width: 640px;
+    max-height: 640px;
+    margin: 0 auto;
+}
+
+div * {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    color: red;
+    font-size: 8em;
+}
+
+form {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+}
+
+form * {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+table {
+    width: 90vw;
+    max-width: 960px;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-spacing: 0;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+table * {
+    border-bottom: 1px solid black;
+}
+
+th {
+    width: 10vw;
+    font-size: 18px;
+}
+
+td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    overflow-x: hidden;
+}
